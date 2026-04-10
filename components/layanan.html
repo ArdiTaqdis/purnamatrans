@@ -1,0 +1,88 @@
+<section class="py-20 bg-gray-50 text-center">
+  <h2 class="text-3xl font-bold mb-10">Pilih Layanan</h2>
+
+  <!-- TAB BUTTON -->
+  <div class="flex justify-center gap-4 mb-10 flex-wrap">
+    <button
+      onclick="showTab('jeep')"
+      class="tab-btn bg-green-700 text-white px-6 py-2 rounded-lg"
+    >
+      🚙 Jeep
+    </button>
+
+    <button
+      onclick="showTab('jemput')"
+      class="tab-btn bg-gray-200 px-6 py-2 rounded-lg"
+    >
+      🚐 Jemput
+    </button>
+
+    <button
+      onclick="showTab('rental')"
+      class="tab-btn bg-gray-200 px-6 py-2 rounded-lg"
+    >
+      🚗 Rental
+    </button>
+  </div>
+
+  <!-- TAB CONTENT -->
+
+  <!-- JEEP -->
+  <div id="jeep" class="tab-content">
+    <p class="mb-6 font-semibold">Paket Jeep Dieng</p>
+
+    <div class="flex flex-wrap justify-center gap-6">
+      <div class="bg-white p-6 rounded-xl shadow w-72">
+        <h3>Zona 1</h3>
+        <p class="text-orange-400 font-bold">Rp 600K</p>
+      </div>
+
+      <div
+        class="bg-white p-6 rounded-xl shadow w-72 border-2 border-orange-400"
+      >
+        <h3>Zona 2 ⭐</h3>
+        <p class="text-orange-400 font-bold">Rp 750K</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow w-72">
+        <h3>Zona 3</h3>
+        <p class="text-orange-400 font-bold">Rp 900K</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- JEMPUT -->
+  <div id="jemput" class="tab-content hidden">
+    <p class="mb-6 font-semibold">Penjemputan Wonosobo</p>
+
+    <div class="bg-white p-6 rounded-xl shadow max-w-md mx-auto">
+      <p>Family Car (5 seat)</p>
+      <p class="text-orange-400 font-bold">Rp 650.000 / hari</p>
+      <p class="text-sm text-gray-500">Avanza, Xpander, Sigra</p>
+    </div>
+  </div>
+
+  <!-- RENTAL -->
+  <div id="rental" class="tab-content hidden">
+    <p class="mb-6 font-semibold">Rental Mobil</p>
+
+    <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3>Avanza</h3>
+        <p>Half Day: Rp 500K</p>
+        <p>Full Day: Rp 650K</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3>Expander</h3>
+        <p>Half Day: Rp 600K</p>
+        <p>Full Day: Rp 750K</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3>Hiace</h3>
+        <p>Rp 1.250.000 / day</p>
+      </div>
+    </div>
+  </div>
+</section>
