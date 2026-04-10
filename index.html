@@ -1,40 +1,61 @@
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-<link
-  href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Playfair+Display:wght@700&display=swap"
-  rel="stylesheet"
-/>
-<link
-  href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;600;700&display=swap"
-  rel="stylesheet"
-/>
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
-<a
-  href="https://wa.me/6281327184952"
-  class="fixed bottom-6 right-6 flex items-center gap-2 bg-green-500 text-white px-4 py-3 rounded-full shadow-lg hover:scale-110 transition"
->
-  💬 <span class="hidden md:inline">Chat Kami</span>
-</a>
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<div id="navbar"></div>
-<div id="hero"></div>
-<div id="layanan"></div>
-<div id="paket"></div>
-<div id="fasilitas"></div>
-<div id="galeri"></div>
-<div id="cta"></div>
-<div id="testimoni"></div>
-<div id="footer"></div>
+    <title>Purnama Trans Tour & Travel</title>
 
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 1000,
-  });
-</script>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-<script src="js/main.js"></script>
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="bg-white">
+    <!-- FLOATING WA -->
+    <a
+      href="https://wa.me/6281327184952"
+      class="fixed bottom-6 right-6 flex items-center gap-2 bg-green-500 text-white px-4 py-3 rounded-full shadow-lg hover:scale-110 transition z-50"
+    >
+      💬 <span class="hidden md:inline">Chat Kami</span>
+    </a>
+
+    <!-- COMPONENT -->
+    <div id="navbar"></div>
+    <div id="hero"></div>
+    <div id="layanan"></div>
+    <div id="paket"></div>
+    <div id="fasilitas"></div>
+    <div id="galeri"></div>
+    <div id="cta"></div>
+    <div id="testimoni"></div>
+    <div id="footer"></div>
+
+    <!-- SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
