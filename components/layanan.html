@@ -1,87 +1,314 @@
-<section class="py-20 bg-gray-50 text-center">
-  <h2 class="text-3xl font-bold mb-10">Pilih Layanan</h2>
+<section
+  id="layanan"
+  class="py-20 bg-gradient-to-b from-gray-50 to-white text-center"
+>
+  <!-- HEADER -->
+  <div class="text-center mb-12 px-4">
+    <span class="text-sm text-green-600 font-semibold tracking-wide uppercase">
+      Layanan Kami
+    </span>
 
-  <!-- TAB BUTTON -->
-  <div class="flex justify-center gap-4 mb-10 flex-wrap">
-    <button
-      onclick="showTab('jeep')"
-      class="tab-btn bg-green-700 text-white px-6 py-2 rounded-lg"
+    <h2
+      class="text-3xl md:text-4xl font-bold text-gray-800 mt-2 mb-3 leading-tight"
     >
-      🚙 Jeep
-    </button>
+      Solusi Perjalanan Bersama Purnama Trans
+    </h2>
 
-    <button
-      onclick="showTab('jemput')"
-      class="tab-btn bg-gray-200 px-6 py-2 rounded-lg"
-    >
-      🚐 Jemput
-    </button>
-
-    <button
-      onclick="showTab('rental')"
-      class="tab-btn bg-gray-200 px-6 py-2 rounded-lg"
-    >
-      🚗 Rental
-    </button>
+    <p class="text-gray-500 max-w-2xl mx-auto text-sm md:text-base">
+      Nikmati layanan terbaik mulai dari Jeep Dieng, penjemputan, hingga rental
+      mobil untuk perjalanan nyaman dan tanpa ribet
+    </p>
   </div>
 
-  <!-- TAB CONTENT -->
-
-  <!-- JEEP -->
-  <div id="jeep" class="tab-content">
-    <p class="mb-6 font-semibold">Paket Jeep Dieng</p>
-
-    <div class="flex flex-wrap justify-center gap-6">
-      <div class="bg-white p-6 rounded-xl shadow w-72">
-        <h3>Zona 1</h3>
-        <p class="text-orange-400 font-bold">Rp 600K</p>
-      </div>
-
-      <div
-        class="bg-white p-6 rounded-xl shadow w-72 border-2 border-orange-400"
+  <!-- TAB WRAPPER -->
+  <div
+    class="bg-white/80 backdrop-blur-md shadow-sm rounded-2xl p-3 max-w-xl mx-auto mb-14"
+  >
+    <div class="flex justify-center gap-2 flex-wrap">
+      <button
+        onclick="showTab('jeep', this)"
+        class="tab-btn bg-green-600 text-white px-5 py-2 rounded-full text-sm font-medium shadow"
       >
-        <h3>Zona 2 ⭐</h3>
-        <p class="text-orange-400 font-bold">Rp 750K</p>
+        🚙 Jeep Dieng
+      </button>
+
+      <button
+        onclick="showTab('jemput', this)"
+        class="tab-btn bg-gray-100 px-5 py-2 rounded-full text-sm font-medium hover:bg-gray-200 transition"
+      >
+        🚐 Jemput
+      </button>
+
+      <button
+        onclick="showTab('rental', this)"
+        class="tab-btn bg-gray-100 px-5 py-2 rounded-full text-sm font-medium hover:bg-gray-200 transition"
+      >
+        🚗 Rental
+      </button>
+    </div>
+    <p class="text-xs text-gray-400 mt-2">
+      ⭐ Dipercaya ratusan wisatawan Dieng
+    </p>
+  </div>
+
+  <!-- ================= JEEP ================= -->
+  <div id="jeep" class="tab-content px-4 md:px-0">
+    <!-- GRID UTAMA -->
+    <div class="grid md:grid-cols-3 gap-8 md:gap-10 max-w-6xl mx-auto">
+      <!-- ZONA 1 -->
+      <div
+        class="bg-white rounded-2xl shadow hover:shadow-xl hover:-translate-y-1 transition overflow-hidden"
+      >
+        <img src="assets/img/zona1.webp" class="w-full h-40 object-cover" />
+        <div class="p-6 text-left">
+          <h3 class="font-bold text-lg mb-2">Zona 1</h3>
+          <p class="text-orange-500 font-bold text-xl mb-3">Rp 600K</p>
+
+          <ul class="text-sm text-gray-600 mb-4 space-y-1">
+            <li>✔ Kawah Sikidang</li>
+            <li>✔ Candi Arjuna</li>
+            <li>✔ Batu Ratapan Angin</li>
+            <li>✔ Telaga Warna</li>
+          </ul>
+
+          <a
+            href="https://wa.me/6281327184952?text=Halo%20saya%20ingin%20booking%20Jeep%20Zona%201"
+            class="block bg-green-600 text-white py-2 rounded-lg text-center hover:bg-green-700"
+          >
+            Booking Zona 1
+          </a>
+        </div>
       </div>
 
-      <div class="bg-white p-6 rounded-xl shadow w-72">
-        <h3>Zona 3</h3>
-        <p class="text-orange-400 font-bold">Rp 900K</p>
+      <!-- ZONA 2 -->
+      <div
+        class="bg-white rounded-2xl shadow-xl border-2 border-orange-400 scale-105 hover:-translate-y-1 transition overflow-hidden"
+      >
+        <img src="assets/img/zona2.webp" class="w-full h-40 object-cover" />
+        <div class="p-6 text-left">
+          <span class="text-xs bg-orange-400 text-white px-2 py-1 rounded"
+            >🔥 BEST SELLER</span
+          >
+          <h3 class="font-bold text-lg mt-2 mb-2">Zona 2</h3>
+          <p class="text-orange-500 font-bold text-xl mb-3">Rp 750K</p>
+
+          <ul class="text-sm text-gray-600 mb-4 space-y-1">
+            <li>✔ Telaga Dringo</li>
+            <li>✔ Kawah Candradimuka</li>
+            <li>✔ Sumur Jalatunda</li>
+            <li>✔ Telaga Sewiwi</li>
+            <li>✔ Telaga Merdada</li>
+          </ul>
+
+          <a
+            href="https://wa.me/6281327184952?text=Halo%20saya%20ingin%20booking%20Jeep%20Zona%202"
+            class="block bg-orange-400 text-white py-2 rounded-lg text-center hover:bg-orange-500"
+          >
+            Booking Zona 2
+          </a>
+        </div>
+      </div>
+
+      <!-- ZONA 3 -->
+      <div
+        class="bg-white rounded-2xl shadow hover:shadow-xl hover:-translate-y-1 transition overflow-hidden"
+      >
+        <img src="assets/img/zona3.webp" class="w-full h-40 object-cover" />
+        <div class="p-6 text-left">
+          <h3 class="font-bold text-lg mb-2">Zona 3</h3>
+          <p class="text-orange-500 font-bold text-xl mb-3">Rp 900K</p>
+
+          <ul class="text-sm text-gray-600 mb-4 space-y-1">
+            <li>✔ Air Terjun Sikarim</li>
+            <li>✔ Swiss Van Java</li>
+            <li>✔ Telaga Menjer</li>
+            <li>✔ Kebun Teh Panama</li>
+            <li>✔ Candi Arjuna</li>
+            <li>✔ Batu Ratapan Angin</li>
+            <li>✔ Telaga Warna</li>
+          </ul>
+
+          <a
+            href="https://wa.me/6281327184952?text=Halo%20saya%20ingin%20booking%20Jeep%20Zona%203"
+            class="block bg-green-600 text-white py-2 rounded-lg text-center hover:bg-green-700"
+          >
+            Booking Zona 3
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION PEMISAH -->
+    <div class="mt-16 pt-10 border-t border-gray-200">
+      <h3 class="text-xl font-bold text-center mb-8">Paket Hemat & Favorit</h3>
+
+      <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-6 px-4">
+        <!-- HEMAT -->
+        <div
+          class="bg-green-50 border border-green-200 rounded-2xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition"
+        >
+          <h3 class="font-bold text-lg mb-2">💸 Paket Hemat</h3>
+          <p class="text-gray-600 mb-2">Zona 1 - 3</p>
+          <p class="text-green-600 font-bold text-xl mb-3">Rp 1.000K</p>
+
+          <a
+            href="https://wa.me/6281327184952?text=Halo%20saya%20ingin%20paket%20hemat%20jeep"
+            class="block bg-green-600 text-white py-2 rounded-lg text-center hover:bg-green-700"
+          >
+            Ambil Paket Hemat
+          </a>
+        </div>
+
+        <!-- FAVORIT -->
+        <div
+          class="bg-orange-50 border border-orange-200 rounded-2xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition"
+        >
+          <h3 class="font-bold text-lg mb-2">⭐ Paket Favorit</h3>
+          <p class="text-gray-600 mb-2">Zona Favorite 1 - 3</p>
+          <p class="text-orange-500 font-bold text-xl mb-3">Rp 1.200K</p>
+
+          <a
+            href="https://wa.me/6281327184952?text=Halo%20saya%20ingin%20paket%20favorit%20jeep"
+            class="block bg-orange-400 text-white py-2 rounded-lg text-center hover:bg-orange-500"
+          >
+            Ambil Paket Favorit
+          </a>
+        </div>
       </div>
     </div>
   </div>
 
-  <!-- JEMPUT -->
-  <div id="jemput" class="tab-content hidden">
-    <p class="mb-6 font-semibold">Penjemputan Wonosobo</p>
+  <!-- ================= JEMPUT ================= -->
+  <div id="jemput" class="tab-content hidden px-4 md:px-0">
+    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <!-- FAMILY CAR -->
+      <div
+        class="bg-white rounded-2xl shadow hover:shadow-xl hover:-translate-y-1 transition overflow-hidden"
+      >
+        <img src="assets/img/jemput1.webp" class="w-full h-40 object-cover" />
+        <div class="p-6 text-left">
+          <h3 class="font-bold text-lg mb-2">🚗 Family Car</h3>
+          <p class="text-orange-500 font-bold text-xl mb-3">Rp 650K / day</p>
 
-    <div class="bg-white p-6 rounded-xl shadow max-w-md mx-auto">
-      <p>Family Car (5 seat)</p>
-      <p class="text-orange-400 font-bold">Rp 650.000 / hari</p>
-      <p class="text-sm text-gray-500">Avanza, Xpander, Sigra</p>
+          <ul class="text-sm text-gray-600 mb-4 space-y-1">
+            <li>✔ Grandmax</li>
+            <li>✔ Avanza</li>
+            <li>✔ Luxio</li>
+            <li>✔ Expander</li>
+            <li>✔ Sigra</li>
+            <li class="text-xs text-gray-400">Kapasitas 5 orang</li>
+          </ul>
+
+          <a
+            href="https://wa.me/6281327184952?text=Halo%20saya%20butuh%20jemputan%20family%20car"
+            class="block bg-green-600 text-white py-2 rounded-lg text-center hover:bg-green-700"
+          >
+            Booking Family Car
+          </a>
+        </div>
+      </div>
+
+      <!-- LUXURY CAR -->
+      <div
+        class="bg-white rounded-2xl shadow-xl border-2 border-orange-400 scale-105 hover:-translate-y-1 transition overflow-hidden"
+      >
+        <img src="assets/img/jemput2.webp" class="w-full h-40 object-cover" />
+        <div class="p-6 text-left">
+          <span class="text-xs bg-orange-400 text-white px-2 py-1 rounded"
+            >⭐ FAVORIT</span
+          >
+          <h3 class="font-bold text-lg mt-2 mb-2">🚐 Luxury Car</h3>
+
+          <ul class="text-sm text-gray-600 mb-4 space-y-1">
+            <li>✔ Hiace Commuter — <b>Rp 1.250K</b></li>
+            <li>✔ Hiace Premio — <b>Rp 1.400K</b></li>
+            <li class="text-xs text-gray-400">Kapasitas 15 orang</li>
+          </ul>
+
+          <a
+            href="https://wa.me/6281327184952?text=Halo%20saya%20butuh%20jemputan%20Hiace"
+            class="block bg-orange-400 text-white py-2 rounded-lg text-center hover:bg-orange-500"
+          >
+            Booking Hiace
+          </a>
+        </div>
+      </div>
+
+      <!-- JUMBO CAR -->
+      <div
+        class="bg-white rounded-2xl shadow hover:shadow-xl hover:-translate-y-1 transition overflow-hidden"
+      >
+        <img src="assets/img/jemput3.webp" class="w-full h-40 object-cover" />
+        <div class="p-6 text-left">
+          <h3 class="font-bold text-lg mb-2">🚌 Jumbo Car</h3>
+
+          <ul class="text-sm text-gray-600 mb-4 space-y-1">
+            <li>✔ Elf Short — <b>Rp 1.100K</b></li>
+            <li>✔ Elf Long — <b>Rp 1.250K</b></li>
+            <li>✔ Shuttle Bus — <b>Rp 750K</b></li>
+            <li class="text-xs text-gray-400">14 - 19 seat</li>
+          </ul>
+
+          <a
+            href="https://wa.me/6281327184952?text=Halo%20saya%20butuh%20jemputan%20rombongan"
+            class="block bg-green-600 text-white py-2 rounded-lg text-center hover:bg-green-700"
+          >
+            Booking Rombongan
+          </a>
+        </div>
+      </div>
     </div>
+
+    <!-- NOTE -->
+    <p class="text-center text-sm text-gray-400 mt-8">
+      Harga dapat menyesuaikan lokasi penjemputan & kebutuhan perjalanan
+    </p>
   </div>
 
-  <!-- RENTAL -->
-  <div id="rental" class="tab-content hidden">
-    <p class="mb-6 font-semibold">Rental Mobil</p>
+  <!-- ================= RENTAL ================= -->
+  <div id="rental" class="tab-content hidden px-4 md:px-0">
+    <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+      <!-- RENTAL UTAMA -->
+      <div
+        class="bg-white rounded-2xl shadow hover:shadow-xl hover:-translate-y-1 transition p-6 text-left"
+      >
+        <h3 class="text-xl font-bold mb-2">🚗 Rental Mobil Harian</h3>
+        <p class="text-gray-500 mb-4">
+          Sewa mobil fleksibel untuk kebutuhan perjalanan Anda
+        </p>
 
-    <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-      <div class="bg-white p-6 rounded-xl shadow">
-        <h3>Avanza</h3>
-        <p>Half Day: Rp 500K</p>
-        <p>Full Day: Rp 650K</p>
+        <ul class="text-sm text-gray-600 mb-4 space-y-1">
+          <li>✔ Avanza • Expander • Sigra • Luxio</li>
+          <li>✔ Bisa lepas kunci / dengan driver</li>
+          <li>✔ Cocok untuk wisata & kebutuhan lokal</li>
+        </ul>
+
+        <p class="text-orange-500 font-bold text-xl mb-4">
+          Mulai Rp 500K / hari
+        </p>
+
+        <a
+          href="https://wa.me/6281327184952?text=Halo%20saya%20ingin%20rental%20mobil"
+          class="block bg-green-600 text-white py-3 rounded-lg text-center hover:bg-green-700"
+        >
+          Booking Rental
+        </a>
       </div>
 
-      <div class="bg-white p-6 rounded-xl shadow">
-        <h3>Expander</h3>
-        <p>Half Day: Rp 600K</p>
-        <p>Full Day: Rp 750K</p>
-      </div>
+      <!-- INFO TAMBAHAN (TRUST + CLARITY) -->
+      <div class="bg-gray-50 rounded-2xl border p-6 text-left">
+        <h3 class="font-bold mb-3">📌 Informasi Rental</h3>
 
-      <div class="bg-white p-6 rounded-xl shadow">
-        <h3>Hiace</h3>
-        <p>Rp 1.250.000 / day</p>
+        <ul class="text-sm text-gray-600 space-y-2">
+          <li>✔ Harga tergantung jenis mobil</li>
+          <li>✔ Bisa include driver / BBM</li>
+          <li>✔ Bisa antar jemput lokasi</li>
+          <li>✔ Tersedia harian & perjalanan luar kota</li>
+        </ul>
+
+        <div class="mt-6 text-sm text-gray-500">
+          💬 Hubungi kami untuk rekomendasi mobil terbaik sesuai kebutuhan Anda
+        </div>
       </div>
     </div>
   </div>
