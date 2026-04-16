@@ -1,18 +1,42 @@
+let galeriSwiper;
+
+function initSwiper() {
+  if (galeriSwiper) {
+    galeriSwiper.destroy(true, true);
+  }
+
+  galeriSwiper = new Swiper(".swiper", {
+    loop: true,
+    spaceBetween: 20,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 2.5,
+      },
+    },
+  });
+}
+
 function loadComponent(id, file) {
   fetch(`components/${file}`)
     .then((res) => res.text())
     .then((data) => {
       document.getElementById(id).innerHTML = data;
 
-      // 🔥 INIT SWIPER KHUSUS GALERI
-      if (id === "galeri") {
-        new Swiper(".swiper", {
-          loop: true,
-          autoplay: {
-            delay: 3000,
-          },
-        });
+      if (id === "galeri" && document.querySelector(".swiper")) {
+        setTimeout(() => {
+          initSwiper();
+        }, 100);
       }
+    })
+    .catch((err) => {
+      console.error("Error load component:", file, err);
     });
 }
 
@@ -25,26 +49,13 @@ loadComponent("cta", "cta.html");
 loadComponent("testimoni", "testimoni.html");
 loadComponent("footer", "footer.html");
 
-// new Swiper(".swiper", {
-//   loop: true,
-//   autoplay: {
-//     delay: 3000,
-//   },
-// });
-
 function showTab(tab, el) {
   const contents = document.querySelectorAll(".tab-content");
 
-  // step 1: hide semua dengan animasi
-  contents.forEach((c) => {
-    c.classList.remove("active");
-  });
+  contents.forEach((c) => c.classList.remove("active"));
 
-  // step 2: tampilkan dengan delay biar smooth
   setTimeout(() => {
-    contents.forEach((c) => {
-      c.classList.add("hidden");
-    });
+    contents.forEach((c) => c.classList.add("hidden"));
 
     const target = document.getElementById(tab);
     target.classList.remove("hidden");
@@ -54,14 +65,21 @@ function showTab(tab, el) {
     }, 50);
   }, 150);
 
-  // step 3: reset button
+  // init swiper hanya kalau ada
+  if (document.querySelector(".swiper")) {
+    initSwiper();
+  }
+
   document.querySelectorAll(".tab-btn").forEach((btn) => {
-    btn.classList.remove("bg-green-600", "bg-green-700", "text-white");
+    btn.classList.remove("bg-green-600", "text-white");
     btn.classList.add("bg-gray-100");
   });
 
-  // step 4: aktifkan button
   if (el) {
     el.classList.add("bg-green-600", "text-white");
   }
+
+  document.getElementById(tab).scrollIntoView({
+    behavior: "smooth",
+  });
 }
