@@ -34,14 +34,14 @@
 
       <button
         onclick="showTab('trip', this)"
-        class="tab-btn bg-gray-100 px-5 py-2 rounded-full text-sm font-medium hover:bg-gray-200 transition"
+        class="tab-btn bg-gray-100 px-5 py-2 rounded-full text-sm font-medium transition active:bg-green-600"
       >
         🗺️ Paket Trip
       </button>
 
       <button
         onclick="showTab('antar', this)"
-        class="tab-btn bg-gray-100 px-5 py-2 rounded-full text-sm font-medium hover:bg-gray-200 transition"
+        class="tab-btn bg-gray-100 px-5 py-2 rounded-full text-sm font-medium transition active:bg-green-600"
       >
         🚐 Antar Jemput Trip
       </button>
@@ -81,6 +81,16 @@
 
           <a
             href="https://wa.me/6281327184952?text=Halo%20saya%20ingin%20booking%20Jeep%20Zona%201"
+            onclick="
+              fbq('track', 'Lead', {
+                content_name: 'Zona 1',
+                content_category: 'Jeep',
+              });
+              setTimeout(() => {
+                window.location.href = this.href;
+              }, 200);
+              return false;
+            "
             class="block text-white py-3 rounded-xl text-center font-semibold bg-gradient-to-r from-orange-400 to-orange-500 shadow-lg hover:shadow-xl hover:scale-[1.02] transition"
           >
             🚀 Booking Zona 1 Sekarang
@@ -118,6 +128,16 @@
 
           <a
             href="https://wa.me/6281327184952?text=Halo%20saya%20ingin%20booking%20Jeep%20Zona%202"
+            onclick="
+              fbq('track', 'Lead', {
+                content_name: 'Zona 2',
+                content_category: 'Jeep',
+              });
+              setTimeout(() => {
+                window.location.href = this.href;
+              }, 200);
+              return false;
+            "
             class="block text-white py-3 rounded-xl text-center font-semibold bg-gradient-to-r from-green-500 to-green-600 shadow-md hover:shadow-lg hover:scale-[1.02] transition"
           >
             🚀 Booking Zona 2 Sekarang
@@ -162,6 +182,16 @@
 
           <a
             href="https://wa.me/6281327184952?text=Halo%20saya%20ingin%20booking%20Jeep%20Zona%203"
+            onclick="
+              fbq('track', 'Lead', {
+                content_name: 'Zona 3',
+                content_category: 'Jeep',
+              });
+              setTimeout(() => {
+                window.location.href = this.href;
+              }, 200);
+              return false;
+            "
             class="block text-white py-3 rounded-xl text-center font-semibold bg-gradient-to-r from-orange-400 to-orange-500 shadow-lg hover:shadow-xl hover:scale-[1.03] transition"
           >
             🚀 Booking Zona 3 Sekarang
@@ -185,6 +215,16 @@
 
           <a
             href="https://wa.me/6281327184952?text=Halo%20saya%20ingin%20paket%20hemat%20jeep"
+            onclick="
+              fbq('track', 'Lead', {
+                content_name: 'Paket Hemat',
+                content_category: 'Jeep',
+              });
+              setTimeout(() => {
+                window.location.href = this.href;
+              }, 200);
+              return false;
+            "
             class="block bg-green-600 text-white py-2 rounded-lg text-center hover:bg-green-700"
           >
             Ambil Paket Hemat
@@ -220,6 +260,16 @@
 
           <a
             href="https://wa.me/6281327184952?text=Halo%20saya%20ingin%20paket%20sunrise%20dieng"
+            onclick="
+              fbq('track', 'Lead', {
+                content_name: 'Paket Sunrise',
+                content_category: 'Jeep',
+              });
+              setTimeout(() => {
+                window.location.href = this.href;
+              }, 200);
+              return false;
+            "
             class="block bg-orange-400 text-white py-2 rounded-lg text-center hover:bg-orange-500"
           >
             🚀 Ambil Paket Sunrise
@@ -305,6 +355,16 @@
 
       <a
         href="https://wa.me/6281327184952?text=Halo%20saya%20ingin%20paket%20trip%20dieng"
+        onclick="
+          fbq('track', 'Lead', {
+            content_name: 'Trip Dieng',
+            content_category: 'Trip',
+          });
+          setTimeout(() => {
+            window.location.href = this.href;
+          }, 200);
+          return false;
+        "
         class="inline-block bg-green-600 text-white px-8 py-3 rounded-xl font-semibold shadow-lg hover:bg-green-700 hover:scale-105 transition"
       >
         🚀 Tanya Paket & Harga Sekarang
@@ -386,6 +446,16 @@
 
           <a
             href="https://wa.me/6281327184952?text=Halo%20saya%20butuh%20jemputan%20family%20car"
+            onclick="
+              fbq('track', 'Lead', {
+                content_name: 'Family Car',
+                content_category: 'Transport',
+              });
+              setTimeout(() => {
+                window.location.href = this.href;
+              }, 200);
+              return false;
+            "
             class="block bg-green-600 text-white py-2 rounded-lg text-center hover:bg-green-700"
           >
             Booking Family Car
@@ -416,6 +486,16 @@
 
           <a
             href="https://wa.me/6281327184952?text=Halo%20saya%20butuh%20jemputan%20Hiace"
+            onclick="
+              fbq('track', 'Lead', {
+                content_name: 'Luxury Car',
+                content_category: 'Transport',
+              });
+              setTimeout(() => {
+                window.location.href = this.href;
+              }, 200);
+              return false;
+            "
             class="block bg-orange-400 text-white py-2 rounded-lg text-center hover:bg-orange-500"
           >
             Booking Hiace
@@ -444,6 +524,16 @@
 
           <a
             href="https://wa.me/6281327184952?text=Halo%20saya%20butuh%20jemputan%20rombongan"
+            onclick="
+              fbq('track', 'Lead', {
+                content_name: 'Jumbo Car',
+                content_category: 'Transport',
+              });
+              setTimeout(() => {
+                window.location.href = this.href;
+              }, 200);
+              return false;
+            "
             class="block bg-green-600 text-white py-2 rounded-lg text-center hover:bg-green-700"
           >
             Booking Rombongan

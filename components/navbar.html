@@ -21,6 +21,13 @@
     <!-- CTA -->
     <a
       href="https://wa.me/6281327184952"
+      onclick="
+        fbq('track', 'Lead');
+        setTimeout(() => {
+          window.location.href = this.href;
+        }, 200);
+        return false;
+      "
       class="bg-green-500 text-white px-4 py-2 rounded-lg text-sm hover:bg-green-600 transition transform hover:scale-105 shadow-lg"
     >
       WhatsApp

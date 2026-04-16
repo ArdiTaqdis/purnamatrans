@@ -45,7 +45,7 @@ loadComponent("hero", "hero.html");
 loadComponent("layanan", "layanan.html");
 loadComponent("fasilitas", "fasilitas.html");
 loadComponent("galeri", "galeri.html");
-loadComponent("cta", "cta.html");
+// loadComponent("cta", "cta.html");
 loadComponent("testimoni", "testimoni.html");
 loadComponent("footer", "footer.html");
 

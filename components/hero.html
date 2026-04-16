@@ -69,6 +69,16 @@
       <!-- CTA UTAMA -->
       <a
         href="https://wa.me/6281327184952?text=Halo%20Purnama%20Trans,%20saya%20ingin%20booking"
+        onclick="
+          fbq('track', 'Lead', {
+            content_name: 'Hero CTA Utama',
+            content_category: 'Main CTA',
+          });
+          setTimeout(() => {
+            window.location.href = this.href;
+          }, 200);
+          return false;
+        "
         class="bg-gradient-to-r from-orange-400 to-orange-500 px-8 py-3 rounded-xl font-bold shadow-lg hover:shadow-2xl hover:scale-105 transition"
       >
         🚀 Tanya Paket & Harga Sekarang
@@ -79,6 +89,16 @@
         <!-- JEEP -->
         <a
           href="https://wa.me/6281327184952?text=Halo%20Purnama%20Trans,%20saya%20ingin%20booking%20Jeep%20Dieng"
+          onclick="
+            fbq('track', 'Lead', {
+              content_name: 'Hero Jeep',
+              content_category: 'Jeep',
+            });
+            setTimeout(() => {
+              window.location.href = this.href;
+            }, 200);
+            return false;
+          "
           class="bg-white/15 hover:bg-white/90 backdrop-blur-md border border-white/30 text-white px-5 py-2 rounded-full text-sm hover:text-black transition hover:scale-105"
         >
           🚙 Sewa Jeep
@@ -87,6 +107,16 @@
         <!-- trip -->
         <a
           href="https://wa.me/6281327184952?text=Halo%20saya%20ingin%20paket%20trip%20Dieng"
+          onclick="
+            fbq('track', 'Lead', {
+              content_name: 'Hero Trip',
+              content_category: 'Trip',
+            });
+            setTimeout(() => {
+              window.location.href = this.href;
+            }, 200);
+            return false;
+          "
           class="bg-white/15 hover:bg-white/90 backdrop-blur-md border border-white/30 text-white px-5 py-2 rounded-full text-sm hover:text-black transition hover:scale-105"
         >
           🗺️ Paket Trip
@@ -95,6 +125,16 @@
         <!-- antar -->
         <a
           href="https://wa.me/6281327184952?text=Halo%20saya%20butuh%20antar%20jemput%20trip%20Dieng"
+          onclick="
+            fbq('track', 'Lead', {
+              content_name: 'Hero Transport',
+              content_category: 'Transport',
+            });
+            setTimeout(() => {
+              window.location.href = this.href;
+            }, 200);
+            return false;
+          "
           class="bg-white/15 hover:bg-white/90 backdrop-blur-md border border-white/30 text-white px-5 py-2 rounded-full text-sm hover:text-black transition hover:scale-105"
         >
           🚐 Antar Jemput
